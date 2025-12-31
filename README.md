@@ -1,2 +1,4 @@
 # SVXLink-Tetra-MTM5400-interface
 SVXLink-Tetra dedicated interface for MTM5400 and CM108
+This is dedicated inteface for Motorola MTM5400 and USB Audio card CM108
+73@Z32IT
