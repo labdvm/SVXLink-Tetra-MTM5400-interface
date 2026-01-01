@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Isolated SVXLink-RPi modem from CM108 to MTM5400")
-		(date "2025-12-29")
-		(rev "1.2")
+		(date "2026-1-01")
+		(rev "V 1.3")
 		(company "Z32IT")
 	)
 	(lib_symbols
@@ -1671,6 +1671,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1.5KExxCA"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1.5KExxCA"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transient voltage suppressor TRANSZORB®"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D?DO?201AE*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1.5KExxCA_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1.5KExxCA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Isolator:CNY17-2"
 			(pin_names
 				(offset 1.016)
@@ -2272,12 +2434,13 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "http://datasheets.diptrace.com/con_rca_jack/rcj-21xx.pdf"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -2331,16 +2494,6 @@
 				)
 			)
 			(property "Check_prices" "https://www.snapeda.com/parts/RCJ-2123/Same+Sky/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DATASHEET" "http://datasheets.diptrace.com/con_rca_jack/rcj-21xx.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3548,6 +3701,18 @@
 		(uuid "2d6edf75-cfd1-4043-96bc-5959d9b1835c")
 	)
 	(junction
+		(at 229.87 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2daaaeb7-bdc6-457a-af13-aefc4bb27a38")
+	)
+	(junction
+		(at 215.9 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33a9fd33-9f63-455e-a0c3-6c41e210518e")
+	)
+	(junction
 		(at 181.61 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3576,6 +3741,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae1e3349-a385-4c3e-b3fb-90a72055d6bc")
+	)
+	(junction
+		(at 214.63 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6345a00-23cd-4cdc-b4c9-f29556524b4f")
 	)
 	(junction
 		(at 172.72 92.71)
@@ -3669,6 +3840,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 101.6) (xy 201.93 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7a1233-33a8-4310-9455-db266854d4dd")
+	)
+	(wire
+		(pts
 			(xy 242.57 78.74) (xy 242.57 107.95)
 		)
 		(stroke
@@ -3709,7 +3890,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 87.63) (xy 204.47 87.63)
+			(xy 234.95 87.63) (xy 214.63 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3749,7 +3930,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 101.6) (xy 201.93 101.6)
+			(xy 238.76 101.6) (xy 215.9 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3959,6 +4140,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 107.95) (xy 207.01 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7039233a-94c6-4c72-b498-1ab605778282")
+	)
+	(wire
+		(pts
 			(xy 176.53 104.14) (xy 176.53 107.95)
 		)
 		(stroke
@@ -4139,7 +4330,17 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 107.95) (xy 207.01 107.95)
+			(xy 214.63 87.63) (xy 204.47 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8825fb9-20d1-47f3-8a84-312cc22ff64d")
+	)
+	(wire
+		(pts
+			(xy 242.57 107.95) (xy 229.87 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4730,6 +4931,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1.5KExxCA")
+		(at 229.87 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b2d740e-9a57-4a12-b5f6-c154ae0a7371")
+		(property "Reference" "D3"
+			(at 232.41 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.5KE6.8CA"
+			(at 232.41 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+			(at 234.95 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1de96bcc-b6b9-429d-8995-9b8d9b9c77f6")
+		)
+		(pin "2"
+			(uuid "35cd87ff-537f-4409-8a16-81a694b95959")
+		)
+		(instances
+			(project "svxlink_interface"
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
 		(at 204.47 116.84 270)
 		(unit 1)
@@ -4806,6 +5077,142 @@
 			(project ""
 				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42ba9140-8ede-405b-8739-df8edb304d6f")
+		(property "Reference" "#PWR06"
+			(at 215.9 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d95c949-9606-4fa8-ad35-214bb4e63c68")
+		)
+		(instances
+			(project "svxlink_interface"
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1.5KExxCA")
+		(at 214.63 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4532fb56-c5a0-4b58-ae40-f9ea208ae42f")
+		(property "Reference" "D1"
+			(at 217.17 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.5KE6.8CA"
+			(at 217.17 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+			(at 219.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 214.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+			(at 214.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b290716-21ac-4f73-8302-4d4f02acb691")
+		)
+		(pin "2"
+			(uuid "50832cdf-a8f3-431b-9043-b1b5cfff4ec4")
+		)
+		(instances
+			(project ""
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5059,6 +5466,72 @@
 			(project "svxlink_interface"
 				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "619fc8cf-4916-4789-bf54-ee046e3b8f4e")
+		(property "Reference" "#PWR07"
+			(at 229.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "583620b1-6e05-439a-b4fa-40b0d8042a39")
+		)
+		(instances
+			(project "svxlink_interface"
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -5396,6 +5869,72 @@
 			(project ""
 				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78db263e-9bf6-4e44-bd2c-1c99dcbe2849")
+		(property "Reference" "#PWR05"
+			(at 214.63 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "264f53cb-c171-4731-8a8c-0238a0ddebb1")
+		)
+		(instances
+			(project "svxlink_interface"
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -6165,6 +6704,76 @@
 			(project ""
 				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1.5KExxCA")
+		(at 215.9 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2fc6dce-abda-414a-a627-5ac80a91843c")
+		(property "Reference" "D2"
+			(at 218.44 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1.5KE6.8CA"
+			(at 218.44 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+			(at 220.98 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 215.9 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+			(at 215.9 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7ced169-a41c-4c82-ae8c-8a62fe7f87d8")
+		)
+		(pin "2"
+			(uuid "a203a3f2-7cb0-496f-a0e6-4667e38472e5")
+		)
+		(instances
+			(project "svxlink_interface"
+				(path "/8616577d-069b-43d6-a4a7-799e83c9906b"
+					(reference "D2")
 					(unit 1)
 				)
 			)
