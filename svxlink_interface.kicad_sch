@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Isolated SVXLink-RPi modem from CM108 to MTM5400")
-		(date "2026-1-01")
-		(rev "V 1.3")
+		(date "2026-1-02")
+		(rev "V 1.4")
 		(company "Z32IT")
 	)
 	(lib_symbols
